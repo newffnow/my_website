@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <center><p id="welcome" style="font-size: 38px; color: yellowgreen"> 您好，欢迎来到始余欢的网站！</p><br></center>
+    <center><span id="create_days" style="font-size: 38px; color: green"></span></center><br>
+    <center><span id="remain_days" style="font-size: 38px; color: green"></span></center><br>
+    <center><span id="lunar_time" style="font-size: 38px; color: green"></span></center><br>
+    <center><span id="my_days" style="font-size: 38px; color: green"></span></center><br>
+
+    <script src="js/clc_data.js"></script> 
+    <script>
+        window.setInterval(function() {
+            show("create_days", "remain_days", "lunar_time");
+        }, 900);
+        window.onload = function() {
+            show("create_days", "remain_days", "lunar_time");
+            show_my("my_days");
+        };
+    </script>
+</body>
+</html>
