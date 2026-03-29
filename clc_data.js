@@ -66,7 +66,7 @@ function show_my(my_days_id)
     var my_date = new Date();
     var my_days_ele = document.getElementById(my_days_id);
 
-    var addStr = diffdate(2026, 2, 8, my_date.getFullYear(), my_date.getMonth()+1, my_date.getDate()) + "天";
+    var addStr = diffdate(2026, 3, 28, my_date.getFullYear(), my_date.getMonth()+1, my_date.getDate()) + "天";
     my_days_ele.innerHTML = "今天已经是第" + addStr;
 }
 
